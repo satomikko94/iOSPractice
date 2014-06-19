@@ -25,5 +25,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)helloButtonTapped:(id)sender {
+    NSLog(@"Hello iOS World! :)");
+}
 
 @end
