@@ -21,6 +21,7 @@
 		A74DD50F195112E6005F785C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74DD4F1195112E5005F785C /* UIKit.framework */; };
 		A74DD517195112E6005F785C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A74DD515195112E6005F785C /* InfoPlist.strings */; };
 		A74DD519195112E6005F785C /* HelloiOSWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A74DD518195112E6005F785C /* HelloiOSWorldTests.m */; };
+		A74DD5241957A8CE005F785C /* ExTestStack.m in Sources */ = {isa = PBXBuildFile; fileRef = A74DD5231957A8CE005F785C /* ExTestStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		A74DD514195112E6005F785C /* HelloiOSWorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloiOSWorldTests-Info.plist"; sourceTree = "<group>"; };
 		A74DD516195112E6005F785C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A74DD518195112E6005F785C /* HelloiOSWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloiOSWorldTests.m; sourceTree = "<group>"; };
+		A74DD5221957A8CE005F785C /* ExTestStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExTestStack.h; sourceTree = "<group>"; };
+		A74DD5231957A8CE005F785C /* ExTestStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExTestStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				A74DD4FC195112E5005F785C /* ExAppDelegate.h */,
 				A74DD4FD195112E5005F785C /* ExAppDelegate.m */,
 				A74DD4FF195112E5005F785C /* Main.storyboard */,
+				A74DD5221957A8CE005F785C /* ExTestStack.h */,
+				A74DD5231957A8CE005F785C /* ExTestStack.m */,
 				A74DD502195112E5005F785C /* ExViewController.h */,
 				A74DD503195112E5005F785C /* ExViewController.m */,
 				A74DD505195112E5005F785C /* Images.xcassets */,
@@ -253,6 +258,7 @@
 				A74DD4FA195112E5005F785C /* main.m in Sources */,
 				A74DD4FE195112E5005F785C /* ExAppDelegate.m in Sources */,
 				A74DD504195112E5005F785C /* ExViewController.m in Sources */,
+				A74DD5241957A8CE005F785C /* ExTestStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
