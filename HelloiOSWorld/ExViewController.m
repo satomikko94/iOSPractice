@@ -7,8 +7,13 @@
 //
 
 #import "ExViewController.h"
+#import "ExTestQueue.h"
 
 @interface ExViewController ()
+@property ExTestQueue *queue;
+@property (weak, nonatomic) IBOutlet UITextField *inputObject;
+@property (weak, nonatomic) IBOutlet UITextField *outputSize;
+@property (weak, nonatomic) IBOutlet UITextField *outputObject;
 
 @end
 
@@ -18,6 +23,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // initialize queue
+    self.queue = [[ExTestQueue alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,6 +35,19 @@
 }
 - (IBAction)helloButtonTapped:(id)sender {
     NSLog(@"Hello iOS World! :)");
+}
+- (IBAction)pushObjectPushed:(id)sender {
+    NSString *str = self.inputObject.text;
+    if(str && str.length > 0){
+        [self.queue push:str];
+    }
+    self.outputSize.text = [NSString stringWithFormat:@"%d", self.queue.size];
+}
+- (IBAction)popObjectPushed:(id)sender {
+    NSString *obj = (NSString *)[self.queue pop];
+    self.outputObject.text = obj;
+    
+    self.outputSize.text = [NSString stringWithFormat:@"%d", self.queue.size];
 }
 
 @end

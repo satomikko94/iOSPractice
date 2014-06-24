@@ -15,4 +15,16 @@
 - (void)printInput {
     NSLog(@"%@", self.input);
 }
+
+- (void)sampleMethod {
+    
+}
+
+- (void)sampleMethod:(NSString *)str1{
+    
+}
+
+- (void)sampleMethod:(NSString *)str1 :(NSString *)str2{
+    
+}
 @end
