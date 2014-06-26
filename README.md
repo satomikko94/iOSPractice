@@ -1,11 +1,14 @@
-HelloiOSWorld
+iOSPractice
 =============
 
-iOS練習用。Hello World以外のこともやるかも。
+iOS Practice Repository
 
 
 Release Note
 ----------------------------------------
+
+### 2.0.1 (2014/06/26)
+- rename repository
 
 ### 2.0.0 (2014/06/26)
 - remake project
